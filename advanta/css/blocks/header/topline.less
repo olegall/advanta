@@ -1,0 +1,71 @@
+@import "../../descriptions/descriptions";
+
+.topline {
+	.transition(padding);
+	background: #f4f4f4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 3.6rem 0 1.6rem;
+	z-index: 10;
+
+	&__wrap {
+		line-height: 3rem;
+		height: 3rem;
+	}
+
+	&.thin {
+		padding: 1rem 0;
+	}
+}
+/* thr */
+.topline-about {
+	font-size: 1.3rem;
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: middle;
+	padding: .5rem 0 .5rem 1.6rem;
+	border-left: .1rem solid #c3c3c3;
+	margin: -.5rem 0 0 1.5rem;
+}
+/* /thr */
+.header-reg-btn {
+	float: right;
+}
+
+@media screen and (max-width: 800px) {
+	.topline {
+		&__wrap {
+			height: auto;
+			line-height: inherit;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.topline {
+		position: static;
+	}
+
+	.header-reg-btn {
+		float: none;
+		margin: 1rem 0 0 16.5rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.topline-about {
+		margin: 0 0 2rem;
+		text-align: center;
+		display: block;
+		padding-left: 0;
+		border: none;
+	}
+
+	.header-reg-btn {
+		margin: 0;
+		text-align: center;
+	}
+}

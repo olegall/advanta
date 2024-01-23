@@ -1,0 +1,40 @@
+@import "../descriptions/descriptions";
+
+.overlay {
+	.transition(opacity);
+	background: #000;
+	position: fixed;
+	opacity: .0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+
+	&.show {
+		opacity: .2;
+	}
+
+	&__content {
+		position: relative;
+		background: #fff;
+		box-shadow: 0 0 2.9rem rgba(0, 0, 0, .27);
+	}
+}
+
+.close-icon {
+	.no-select;
+	.square(25);
+	font-size: 2.5rem;
+	position: absolute;
+	text-align: center;
+	line-height: 2.5rem;
+	right: 0;
+	top: 0;
+	color: @red;
+	cursor: pointer;
+
+	&:hover {
+		color: #000;
+	}
+}

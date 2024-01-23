@@ -1,0 +1,65 @@
+//colors
+@red: #cb1f2b;
+@green: #1c9400;
+@gray: #888;
+@blue: #5995f0;
+@orange: #ebb046;
+
+@border-color: #c8ced8;
+@link-color: @blue;
+
+
+//sizes
+@font-size: 1.4rem;
+
+.square (@num) {
+  width: @num + 0px;
+  height: @num + 0px;
+}
+
+.circle (@num) {
+  .square (@num);
+  border-radius: 100%;
+}
+
+.no-select() {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.transition (@prop: all, @duration: .3s, @function: ease, @delay: 0s){
+  -webkit-transition: @arguments;
+     -moz-transition: @arguments;
+          transition: @arguments;
+  will-change: transition, @prop;
+}
+
+.transform (@arguments) {
+  -webkit-transform: @arguments;
+     -moz-transform: @arguments;
+      transform: @arguments;
+}
+
+.animation(@parameters) {
+    -webkit-animation: @parameters;
+       -moz-animation: @parameters;
+      animation: @parameters;
+}
+
+.offset(@x: -50%, @y: -50%) {
+  transform: translate(@x, @y);
+}
+
+.offsetX(@x: -50%) {
+  transform: translateX(@x);
+}
+
+.offsetY(@y: -50%) {
+  transform: translateY(@y);
+}
+
+.no-offset() {
+  transform: none;
+}

@@ -1,0 +1,101 @@
+﻿
+.clearfix {
+	clear: both;
+}
+
+.introduction .mb20 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.introduction .orange-bordered-box {
+	border: none;
+	
+}
+
+.conference-archive {
+	margin-top: 50px;
+}
+
+
+.introduction .orange-bordered-box--fb {
+	padding: 0;
+	padding-bottom: 50px;
+}
+
+.introduction .orange-bordered-box--fb p {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.buy-btn {
+	display: block;
+	font-weight: normal;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.key-topics {
+	background: #f4f4f4;
+	color: black;
+	padding-top: 10px;
+	height: auto;
+}
+
+.key-topics  h2 {
+	text-transform: none;
+}
+
+.themes-box__item {
+	
+}
+
+.themes-box__item {
+	border-top: none;
+	padding-top: 0;
+}
+
+.themes-box__item::before {
+	background: none;
+    color: rgb(229, 178, 69);
+    content: "• ";
+    font-size: 36px;
+	width: 5px;
+	vertical-align: top;
+}
+
+.themes-box__text {
+	padding-top: 15px;
+}
+
+.key-topics .about-conf {
+	
+	margin: 50px 0 50px 0;
+}
+
+.archive-li-s {
+	margin-bottom: 50px;
+}
+
+.archive-li-s span {
+	display: block;
+}
+
+.archive-li-s li {
+    width: 290px;
+    float: left;
+    margin: 0 0 20px 0 !important;
+}
+
+
+
+.archive-li-s img {
+    float: left;
+    padding-right: 18px;
+}
+
+.mb35 {
+	margin-top: 30px;
+}

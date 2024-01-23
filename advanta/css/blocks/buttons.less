@@ -1,0 +1,169 @@
+@import "../descriptions/descriptions";
+
+.btn {
+	.no-select;
+	-webkit-appearance: none;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 1.2rem;
+	cursor: pointer;
+	border-radius: .3rem;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #fff;
+
+	&:hover {
+		.btn__animation {
+			width: 65rem;
+			height: 65rem;
+		}
+	}
+
+	&--blue {
+		background: @blue;
+
+		.btn__animation {
+			background: darken(@blue, 10%);
+		}
+	}
+
+	&--red {
+		background: @red;
+
+		.btn__animation {
+			background: darken(@red, 10%);
+		}
+	}
+
+	&--h30 {
+		height: 3rem;
+		line-height: 3rem;
+	}
+
+	&--h36 {
+		height: 3.6rem;
+		line-height: 3.6rem;
+	}
+
+	&--h40 {
+		height: 4rem;
+		line-height: 4rem;
+	}
+
+	&--h46 {
+		height: 4.6rem;
+		line-height: 4.6rem;
+	}
+
+	&--h60 {
+		height: 6rem;
+		line-height: 6rem;
+	}
+
+	&--empty {
+		.transition(color);
+		border: .2rem solid transparent;
+	}
+
+	&--empty-h23 {
+		height: 2.3rem;
+		line-height: 2.1rem;
+		border-width: .1rem;
+	}
+
+	&--empty-h38 {
+		height: 3.8rem;
+		line-height: 3.4rem;
+	}
+
+	&--empty-h52 {
+		height: 5.2rem;
+		line-height: 4.8rem;
+	}
+
+	&--empty-orange {
+		border-color: @orange;
+		color: #666;
+		text-transform: none;
+		font-weight: normal;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&.active {
+			color: #fff;
+			background: @orange;
+		}
+
+		.btn__animation {
+			background: @orange;
+		}
+	}
+
+	&--empty-blue {
+		border-color: @blue;
+
+		.btn__animation {
+			background: @blue;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__animation {
+		.circle(0);
+		.offset;
+		.transition(all, .4s);
+		position: absolute;
+		display: block;
+	}
+}
+
+.show-more-btn {
+	padding-bottom: 1.8rem;
+	position: relative;
+	z-index: 1;
+
+	&__box {
+		border-bottom: .1rem solid #ccc;
+		text-align: center;
+		font-size: 0;
+
+		&::before, &::after {
+			content: '';
+			display: inline-block;
+			background: #fff;
+			width: 1.4rem;
+			height: 3.8rem;
+			vertical-align: middle;
+			margin-bottom: -1.8rem;
+		}
+
+		.btn {
+			color: @blue;
+			background: #fff;
+			font-weight: normal;
+			height: 4rem;
+			line-height: 3.5rem;
+			margin-bottom: -1.8rem;
+			min-width: 15.7rem;
+			text-transform: none;
+			font-size: 1.4rem;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+

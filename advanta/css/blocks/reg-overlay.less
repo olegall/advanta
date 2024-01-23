@@ -1,0 +1,42 @@
+@import "../descriptions/descriptions";
+
+.reg-overlay {
+	/* thr */
+	.transition(top);
+	margin: -23.2rem 0 0 -24rem;
+	padding: 5rem 4.5rem 4rem;
+	width: 48rem;
+	position: fixed;
+	top: -50%;
+	left: 50%;
+	z-index: 1001;
+	/* /thr */
+
+	&.show {
+		top: 50%;
+	}
+
+	&__field {
+		width: 100%;
+	}
+
+	&__btn {
+		width: 21rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.reg-overlay {
+		width: auto;
+		left: 1rem;
+		right: 1rem;
+		padding: 1rem;
+		margin: 0;
+		top: -100%;
+		transform: none;
+
+		&.show {
+			top: 1rem;
+		}
+	}
+}

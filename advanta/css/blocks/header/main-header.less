@@ -1,0 +1,20 @@
+@import "../../descriptions/descriptions";
+
+.main-header {
+	.transition(padding);
+	padding-top: 8.2rem;
+
+	&.thin {
+		padding-top: 5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-header {
+		padding-top: 0;
+
+		&.thin {
+			padding-top: 0;
+		}
+	}
+}

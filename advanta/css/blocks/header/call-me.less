@@ -1,0 +1,113 @@
+@import "../../descriptions/descriptions";
+
+.call-me {
+	float: right;
+	font-size: 0;
+	padding: 1.6rem 0;
+
+	&__tel {
+		font-size: 2.4rem;
+		font-weight: 300;
+		margin-right: 1.6rem;
+		vertical-align: middle;
+		line-height: 2.5rem;
+	}
+
+	&__tooltip-box {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.call-me-tooltip {
+	.transition(max-height);
+	z-index: 1001;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 3rem;
+	margin: -2rem -3rem 0 0;
+
+	&.show {
+		max-height: 100rem;
+	}
+
+	&__content {
+		padding: 2.8rem 3.2rem 3rem;
+		white-space: nowrap;
+		margin: 3rem 0;
+		text-align: left;
+
+		&::before {
+			content: '';
+			.square(0);
+			border-style: solid;
+			border-width: 0 1.4rem 1.4rem;
+			border-color: transparent transparent #fff;
+			position: absolute;
+			bottom: 100%;
+			right: 4.4rem;
+		}
+	}
+
+	&__field {
+		vertical-align: top;
+		margin-right: 2rem;
+		width: 18rem;
+	}
+
+	&__btn {
+		width: 12.6rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.call-me {
+		float: none;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.call-me {
+		position: relative;
+
+		&__tooltip-box {
+			position: static;
+		}
+	}
+
+	.call-me-tooltip {
+		left: 0;
+		margin-right: 0;
+
+		&__content {
+			&::before {
+				content: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.call-me-tooltip {
+		&__field {
+			width: 100%;
+			margin-right: 0;
+			display: block;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.call-me {
+		&__tooltip-box {
+			display: block;
+			margin-top: 1.5rem;
+		}
+	}
+}

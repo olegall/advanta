@@ -1,0 +1,237 @@
+﻿
+.clearfix {
+	clear: both;
+}
+
+
+
+
+.for-speakers {
+	background: #f4f5f8;
+	padding-top: 70px;
+	height: 451px;
+}
+
+.short-white-wrapper {
+	padding: 70px 0 70px 0 !important;
+}
+
+.for-speakers-title {
+	
+}
+
+.conference-is-section {
+	margin-bottom: 0;
+}
+
+.conference-is-title {
+	
+}
+
+.for-speakers-title,
+.conference-is-title,
+.about-conference,
+.video-title,
+.conference-helpful h2,
+.topics h2,
+.photogallery  h2 {
+	text-transform: none !important;
+}
+
+.for-speakers-main-image {
+	float: right;
+}
+
+.for-speakers-speaker-btn {
+	margin: 55px 0 0 0;
+}
+
+.for-speakers-main {
+	height: 1000px;
+}
+
+.conference-is-img {
+	float: left;
+	width: 149px;
+	margin: 0 auto;
+}
+
+.conference-is-info {
+	float: right;
+	width: 650px;
+}
+
+.for-speakers-reviews-box {
+	padding: 60px 0 60px 0;
+}
+
+.for-speakers-video-block {
+    background: no-repeat 50% 0 url("http://conference.advanta-group.ru/concrete/themes/elemental/img/video-image.jpg") !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 27rem;
+    width: 43.2rem;
+    cursor: pointer;
+}
+
+.for-speakers-video-block:hover::before {
+    content: '';
+    background: no-repeat url("http://conference.advanta-group.ru/concrete/themes/elemental/img/video-btns.png") !important;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 7.3rem;
+    width: 9.6rem;
+    margin-left: -4.8rem;
+}
+
+.for-speakers-video-block::before {
+    content: '';
+    background: no-repeat url("http://conference.advanta-group.ru/concrete/themes/elemental/img/video-btns.png") !important;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 7.3rem;
+    width: 9.6rem;
+    margin-left: -4.8rem;
+}
+
+.conference-helpful {
+	background: #ebb046;
+	padding: 65px 0 45px 0;
+}
+
+.conference-helpful h2 {
+	color: black;
+}
+
+.conference-helpful img {
+	display: inline-block;
+}
+
+.conference-helpful ul {
+	display: table;
+}
+
+.conference-helpful img {
+	float: left;
+	padding-right: 18px;
+}
+
+.conference-helpful ul,
+.conference-helpful li {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+}
+
+.conference-helpful li {
+	margin-bottom: 20px !important;
+}
+
+.topics {
+	padding-top: 50px !important;
+	margin-bottom: 0 !important;
+}
+
+.topics ul li {
+	border-top: none !important;
+}
+
+td ul {
+	display: block !important;
+}
+
+td img {
+	width: 45px !important;
+}
+
+.photogallery {
+	padding-top: 50px !important;
+	margin-bottom: 65px;
+}
+
+.photogallery section {
+	margin-bottom: 0;
+}
+
+.photogallery ul {
+	display: block !important;
+}
+
+.photogallery li {
+	display: inline-block !important;
+	width: auto !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-left: 8px !important;
+	margin-bottom: 8px !important;
+}
+/*
+.owl-carousel { 
+	display: block !important;
+}
+
+
+.owl-item {
+	display: block !important;
+	border: 1px dotted red !important;
+	float: left !important;
+}
+
+.item {
+	height: 100px !important;
+	width: 100px !important;
+}
+*/
+
+.prev, 
+.next {
+	top: -135px;
+}
+
+.prev {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+.owl-item {
+	width: 150px !important;
+	height: 100px;
+	margin-right: 50px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	width: 7px !important;
+	height: 7px !important;
+}
+
+.companies {
+	text-align: center;
+}
+
+.registration-for-speakers {
+	display: block !important;
+	margin: 0 auto;
+}
+
+.send-btn-for-speakers {
+	display: block !important;
+	margin: 0 auto !important;
+	margin-top: 20px !important;
+}
+
+.send-claim-p {
+	font-size: 16px;
+	margin-bottom: 55px;
+}
+
+.footer-for-speakers {
+	margin-top: 0 !important;
+}

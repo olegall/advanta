@@ -1,0 +1,35 @@
+@import "../descriptions/descriptions";
+
+.counter {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	border: .1rem solid #b6b6b6;
+	border-radius: .3rem;
+
+	&__btn, &__field {
+		display: inline-block;
+		vertical-align: middle;
+		height: 2.4rem;
+		text-align: center;
+		font: @font-size/2.2rem 'Open Sans', sans-serif;
+	}
+
+	&__btn {
+		width: 1.8rem;
+		color: @blue;
+		cursor: pointer;
+
+		&:hover {
+			background: @blue;
+			color: #fff;
+		}
+	}
+
+	&__field {
+		border: solid #b6b6b6;
+		border-width: 0 .1rem;
+		width: 2.8rem;
+		text-align: center;
+	}
+}
